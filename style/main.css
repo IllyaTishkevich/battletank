@@ -1,0 +1,194 @@
+@font-face {
+    font-family: tank; /* Имя шрифта */
+    src: url("./18965.ttf"); /* Путь к файлу со шрифтом */
+}
+
+#player {
+    width: 48px;
+    height: 48px;
+    background-image: url("./pic/player.png");
+    background-size: 48px 48px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#player.anim1 {
+    background-image: url("./pic/player.png");
+}
+
+#player.anim2 {
+    background-image: url("./pic/player3.png");
+}
+
+#playingField {
+    width: 650px;
+    height: 600px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.enemy_block {
+    width: 48px;
+    height: 48px;
+    background-image: url("./pic/enemy1.png");
+    background-size: 48px 48px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.enemy_block.anim1 {
+    background-image: url("./pic/enemy1.png");
+}
+
+.enemy_block.anim2 {
+    background-image: url("./pic/enemy3.png");
+}
+
+.enemy_block.dest1 {
+    background-image: url("./pic/dest1.png");
+}
+
+.enemy_block.dest1.dest2 {
+    background-image: url("./pic/dest2.png");
+}
+
+.grass_block{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+.concrete_wall_block {
+    position: absolute;
+    background-image: url("./pic/conretewall.png");
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.break_wall_block {
+    position: absolute;
+    background-image: url("./pic/breakwall.png");
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.half_break_wall_block {
+    position: absolute;
+    background-image: url("./pic/breakwall.png");
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.chicken_block {
+    position: absolute;
+    background-image: url("./pic/chicken.png");
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.bullet_block {
+    position: absolute;
+    background-image: url("./pic/bullet.png");
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+}
+.bullet_block.anim1 {
+    background-image: url("./pic/bullet1.png");
+}
+.bullet_block.anim1.anim2 {
+    background-image: url("./pic/bullet2.png");
+}
+.bullet_block.anim1.anim2.anim3 {
+    background-image: url("./pic/bullet3.png");
+}
+
+
+.game_label_ui {
+    color: chocolate;
+    display: block;
+    font-size: 100px;
+    padding-top: 90px;
+    text-align: center;
+    font-family: tank;
+}
+
+.play_button_ui {
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'tank';
+}
+
+.play_button_ui:hover {
+    cursor: pointer;
+}
+
+.level_splash_ui {
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'tank';
+    line-height: 1.5;
+}
+
+.game_over_ui {
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'tank';
+    line-height: 1.5;
+}
+.gameBar_ui {
+    background-color: black;
+    position: absolute;
+    width: 640px;
+    height: 50px;
+    border: 5px solid chocolate;
+    border-radius: 5px;
+    display: flex;
+}
+
+.players_ives_ui {
+    color: white;
+    font-family: tank;
+    padding: 10px 30px;
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: block;
+    width: 25%;
+}
+
+.players_ives_ui .img {
+    width: 30px;
+    height: 30px;
+    vertical-align: sub;
+}
+
+.score_ui {
+    color: white;
+    font-family: tank;
+    padding: 5px 30px;
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 5px;
+    vertical-align: central;
+}
+
+.score_ui.main_menu {
+    margin-top: 150px;
+    text-align: center;
+}
